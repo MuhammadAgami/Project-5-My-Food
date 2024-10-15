@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Character set definition -->
+    <meta charset="UTF-8" />
+
+    <!-- Viewport for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO meta tags -->
+    <meta
+      name="description"
+      content="A blog about food, recipes, and culinary tips."
+    />
+    <meta
+      name="keywords"
+      content="food, blog, recipes, sandwiches, steaks, culinary, chef"
+    />
+    <meta name="author" content="Mohamed Agami" />
+
+    <!-- Title of the document -->
+    <title>Food Blog Template</title>
+
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="master.css" />
+
+    <!-- Google Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Karma"
+    />
+  </head>
+
+  <body>
+    <!-- Navigation Menu -->
+    <ul class="tool-par">
+      <li><a href="#" class="close" onclick="closeIcon()">Close Menu</a></li>
+      <li><a href="#food" onclick="closeIcon()">Food</a></li>
+      <li><a href="#about" onclick="closeIcon()">About</a></li>
+    </ul>
+
+    <!-- Header section with icon, title, and contact -->
+    <header>
+      <div class="icon" onclick="clickIcon()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <h2>My Food</h2>
+      <div class="mail">Mail</div>
+    </header>
+
+    <!-- Main food menu section -->
+    <section class="main-menu" id="food">
+      <div class="t-menu">
+        <div>
+          <img src="image/sandwich.jpg" alt="sandwich" />
+          <h3>The Perfect Sandwich, A Real NYC Classic</h3>
+          <p>
+            Just some random text, lorem ipsum text praesent tincidunt ipsum
+            lipsum.
+          </p>
+        </div>
+        <div>
+          <img src="image/steak.jpg" alt="steak" />
+          <h3>Let Me Tell You About This Steak</h3>
+          <p>
+            Once again, some random text to lorem lorem lorem lorem ipsum text
+            praesent tincidunt ipsum lipsum.
+          </p>
+        </div>
+        <div>
+          <img src="image/cherries.jpg" alt="Cherries" />
+          <h3>Cherries, interrupted</h3>
+          <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+          <p>What else?</p>
+        </div>
+        <div>
+          <img src="image/wine.jpg" alt="wine" />
+          <h3>Once Again, Robust Wine and Vegetable Pasta</h3>
+          <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+        </div>
+        <div>
+          <img src="image/popsicle.jpg" alt="popsicle" />
+          <h3>All I Need Is a Popsicle</h3>
+          <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+        </div>
+        <div>
+          <img src="image/salmon.jpg" alt="salmon" />
+          <h3>Salmon For Your Skin</h3>
+          <p>
+            Once again, some random text to lorem lorem lorem lorem ipsum text
+            praesent tincidunt ipsum lipsum.
+          </p>
+        </div>
+        <div>
+          <img src="image/sandwich.jpg" alt="sandwich" />
+          <h3>The Perfect Sandwich, A Real Classic</h3>
+          <p>
+            Just some random text, lorem ipsum text praesent tincidunt ipsum
+            lipsum.
+          </p>
+        </div>
+        <div>
+          <img src="image/croissant.jpg" alt="croissant" />
+          <h3>Le French</h3>
+          <p>
+            Lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.
+          </p>
+        </div>
+      </div>
+
+      <!-- Pagination -->
+      <ul>
+        <li><a href="#"> </a></li>
+        <li class="active"><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">>></a></li>
+      </ul>
+    </section>
+
+    <hr />
+
+    <!-- About Me section -->
+    <section class="person-chef" id="about">
+      <h2>About Me, The Food Man</h2>
+      <img src="image/chef.jpg" alt="this is a chef" />
+      <h3>I am Who I Am!</h3>
+      <span>With Passion For Real, Good Food</span>
+      <p>
+        Just me, myself and I, exploring the universe of unknownment. I have a
+        heart of love and an interest of lorem ipsum and mauris neque quam blog.
+        I want to share my world with you. Praesent tincidunt sed tellus ut
+        rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies
+        congue gravida diam non fringilla.
+      </p>
+    </section>
+
+    <hr />
+
+    <!-- Footer section -->
+    <div class="end-footer-section">
+      <footer>
+        <h3>Footer</h3>
+        <p>
+          Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum,
+          porta lectus vitae, ultricies congue gravida diam non fringilla.
+        </p>
+        <span>Powered by <a href="#">Mohamed Agami</a></span>
+      </footer>
+
+      <!-- Blog posts section -->
+      <div class="blogs">
+        <h3>BLOG POSTS</h3>
+        <ul>
+          <li>
+            <img src="image/workshop.jpg" alt="workshop" />
+            <div class="text">
+              <h5>Lorem</h5>
+              <p>Sed mattis nunc</p>
+            </div>
+          </li>
+          <hr />
+          <li>
+            <img src="image/gondol.jpg" alt="gondol" />
+            <div class="text">
+              <h5>Ipsum</h5>
+              <p>Praes tinci sed</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Popular tags section -->
+      <div class="popular">
+        <h3>POPULAR TAGS</h3>
+        <div>
+          <span class="travel">Travel</span>
+          <span>New York</span>
+          <span>Dinner</span>
+          <span>Salmon</span>
+          <span>France</span>
+          <span>Drinks</span>
+          <span>Ideas</span>
+          <span>Flavors</span>
+          <span>Cuisine</span>
+          <span>Chicken</span>
+          <span>Dressing</span>
+          <span>Fried</span>
+          <span>Fish</span>
+          <span>Duck</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- External JavaScript file -->
+    <script src="main.js"></script>
+  </body>
+</html>

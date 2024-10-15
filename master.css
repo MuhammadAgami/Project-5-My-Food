@@ -1,0 +1,288 @@
+/* General styling */
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Karma", sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    width: 90%;
+    margin: auto;
+    background-color: #ccc;
+}
+
+/* Sidebar (tool-par) styling */
+.tool-par {
+    position: fixed;
+    box-shadow: 0px 0px 10px 0px #b6b6b6;
+    width: 30%;
+    height: 100vh;
+    color: #000;
+    top: 0px;
+    z-index: 999;
+    background-color: #fff;
+    left: -100%;
+    transition: 0.1s linear;
+}
+
+/* Sidebar links styling */
+.tool-par li a {
+    display: block;
+    font-size: 25px;
+    padding: 20px;
+    transition: 0.3s;
+}
+
+/* Hover effect for sidebar links */
+.tool-par li a:hover {
+    background-color: #ccc;
+}
+
+/* Sidebar responsive for small screens */
+@media(max-width:767px) {
+    .tool-par {
+        width: 50%;
+    }
+}
+
+/* Header section styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+}
+
+/* Hamburger menu icon styling */
+header .icon {
+    padding: 20px;
+    cursor: pointer;
+}
+
+/* Hover effect for hamburger menu icon */
+header .icon:hover {
+    background-color: #ccc;
+}
+
+/* Hamburger menu bars styling */
+header .icon span {
+    display: block;
+    background-color: #000;
+    width: 20px;
+    height: 2px;
+    margin: 5px 0px;
+}
+
+/* Header title styling */
+header h2 {
+    font-weight: 400;
+    font-size: 22px;
+}
+
+/* Mail section in the header */
+header .mail {
+    font-size: 22px;
+}
+
+/* Main menu section styling */
+.main-menu {
+    padding: 100px 0px 50px 0px;
+    width: 90%;
+    margin: 0px auto;
+}
+
+/* Grid layout for menu items */
+.main-menu .t-menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Centering content within menu items */
+.main-menu div {
+    text-align: center;
+}
+
+/* Styling for menu images */
+.main-menu div img {
+    width: 100%;
+}
+
+/* Styling for menu item titles */
+.main-menu div h3 {
+    line-height: 1.6;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+/* Styling for menu item descriptions */
+.main-menu div p {
+    font-size: 15px;
+    margin: 10px 0;
+}
+
+/* Pagination styling */
+.main-menu ul {
+    list-style: none;
+    display: flex;
+    width: fit-content;
+    margin: 30px auto 0px auto;
+}
+
+/* Styling for pagination links */
+.main-menu ul li a {
+    padding: 10px 15px;
+    margin: 0 2px;
+    display: block;
+}
+
+/* Hover effect for pagination links */
+.main-menu ul li a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Styling for the active pagination link */
+.main-menu ul .active a {
+    background-color: #000;
+    color: #fff;
+    transition: 0.3s;
+}
+
+/* Hover effect for the active pagination link */
+.main-menu ul .active a:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+/* Chef section styling */
+.person-chef {
+    padding: 50px 0;
+    text-align: center;
+    width: 90%;
+    margin: auto;
+}
+
+/* Chef image styling */
+.person-chef img {
+    width: 50%;
+    margin: 30px 0;
+}
+
+/* Styling for chef's quote */
+.person-chef span {
+    margin: 20px 0;
+    display: block;
+    font-style: italic;
+}
+
+/* Responsive styling for chef image on small screens */
+@media(max-width:767px) {
+    .person-chef img {
+        width: 90%;
+    }
+}
+
+/* Footer section styling */
+.end-footer-section {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 50px 0;
+}
+
+/* Footer title styling */
+.end-footer-section h3 {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+/* Footer text and link hover effect */
+.end-footer-section footer span {
+    display: block;
+    margin-top: 20px;
+}
+
+.end-footer-section footer span a:hover {
+    color: #00f;
+}
+
+/* Blog posts section styling */
+.end-footer-section .blogs ul li {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+/* Horizontal line between blog posts */
+.end-footer-section .blogs hr {
+    width: 100%;
+}
+
+/* Blog post text styling */
+.end-footer-section .blogs ul li .text {
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+/* Blog post image styling */
+.end-footer-section .blogs img {
+    width: 50px;
+}
+
+/* Popular tags section styling */
+.end-footer-section .popular div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+/* Styling for each popular tag */
+.end-footer-section .popular div span {
+    display: inline-block;
+    background-color: #6d6d6d;
+    padding: 2px 6px;
+    font-size: 12px;
+    color: #fff;
+}
+
+/* Special styling for the 'travel' tag */
+.end-footer-section .popular div .travel {
+    background-color: #000;
+    position: relative;
+    padding: 2px 8px;
+}
+
+/* Decorative line above the 'travel' tag */
+.end-footer-section .popular div .travel::before {
+    content: "";
+    position: absolute;
+    background-color: #000;
+    top: -4px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+}
